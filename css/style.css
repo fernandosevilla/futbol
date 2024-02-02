@@ -1,0 +1,10 @@
+* {
+    background: url(../img/fondo/campo.webp);
+    background-size: 100% 100%; /* La imagen cubre todo el bloque */
+    background-repeat: no-repeat; /* Hacemos que la imagen deje de repetirse */
+    background-attachment: fixed;
+}
+
+.jugador {
+    
+}
