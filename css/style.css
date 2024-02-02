@@ -5,6 +5,115 @@
     background-attachment: fixed;
 }
 
-.jugador {
+img {
+    width: 6.25rem; /* Puedes ajustar el tamaño deseado en píxeles */
+    height: 6.25rem; /* Puedes ajustar el tamaño deseado en píxeles */
+}
+
+.jugadores {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.portero {
+    position: fixed;
+    top: 21.3vw;
+    left: 8vw;
+    animation: 10s aparecer;
+}
+
+.lateralIzq {
+    position: fixed;
+    top: 7vw;
+    left: 25vw;
+    animation: 10s noAparecer, 10s 10s aparecer;
+}
+
+.lateralDer {
+    position: fixed;
+    top: 36vw;
+    left: 25vw;
+    animation: 20s noAparecer, 10s 20s aparecer;
+}
+
+.centralIzq {
+    position: fixed;
+    top: 16vw;
+    left: 20vw;
+    animation: 30s noAparecer, 10s 30s aparecer;
+}
+
+.centralDer {
+    position: fixed;
+    top: 26.5vw;
+    left: 20vw;
+    animation: 40s noAparecer, 10s 40s aparecer;
+}
+
+.mcd {
+    position: fixed;
+    top: 21.3vw;
+    left: 40vw;
+    animation: 50s noAparecer, 10s 50s aparecer;
+}
+
+.mcDer {
+    position: fixed;
+    top: 26.5vw;
+    left: 50vw;
+    animation: 60s noAparecer, 10s 60s aparecer;
+}
+
+.mcIzq {
+    position: fixed;
+    top: 16vw;
+    left: 50vw;
+    animation: 70s noAparecer, 10s 70s aparecer;
+}
+
+.extremoIzq {
+    position: fixed;
+    top: 7vw;
+    left: 65vw;
+    animation: 80s noAparecer, 10s 80s aparecer;
+}
+
+.extremoDer {
+    position: fixed;
+    top: 36vw;
+    left: 65vw;
+    animation: 90s noAparecer, 10s 90s aparecer;
+}
+
+.delantero {
+    position: fixed;
+    top: 21.3vw;
+    left: 75vw;
+    animation: 100s noAparecer, 10s 100s aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        top: -10vw;
+        left: 47vw;
+    }
     
+    50% {
+        top: 20vw;
+        left: 47vw;
+        transform: scale(2);
+    }
+}
+
+@keyframes noAparecer {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
 }
